@@ -1,0 +1,5 @@
+packages:
+  - packages/**
+  # - docs # 文档预览
+  # - components/* # 存放编写的组件的
+  # - playground # 演示组件

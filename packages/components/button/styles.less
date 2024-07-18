@@ -1,0 +1,52 @@
+// @import '../style/theme.less';
+@class: lam-button;
+// @color-danger: #f37;
+// @color-primary: #1661ee;
+// @color-warning: #fa5;
+
+@color-danger: var(--color-danger);
+@color-primary: var(--color-primary);
+@color-warning: var(--color-warning);
+@button-border-color: #d3d7de;
+@font-color-light: #fff;
+@font-color: #2f3540;
+
+.@{class}{
+  padding: 9px 15px;
+  font-size: 12px;
+  border-radius: 3px;
+  color: @font-color;
+  border: 1px solid @button-border-color;
+}
+
+.danger{
+  background-color: @color-danger;
+  color: @font-color-light;
+  border-color: @color-danger;
+}
+.primary{
+  background-color: @color-primary;
+  color: @font-color-light;
+  border-color: @color-primary;
+}
+.warning{
+  background-color: @color-warning;
+  color: @font-color-light;
+  border-color: @color-warning;
+}
+
+.@{class}--small{
+  padding: 7px 15px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+.@{class}--medium{
+  padding: 9px 15px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+.@{class}--large{
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+}

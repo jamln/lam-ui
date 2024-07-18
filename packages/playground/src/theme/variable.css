@@ -1,0 +1,8 @@
+[data-theme=default] {
+  --color-primary: #2673ee;
+  --color-warning: orange;
+  --color-danger: red;
+  --color-font-white: #f9f9f9;
+  --color-font-black: #333;
+  --color-bg-white: #ddd;
+}

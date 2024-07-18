@@ -1,0 +1,19 @@
+{
+  "name": "lam-ui",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm -C packages/components dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.5.0",
+    "less": "^4.2.0",
+    "less-loader": "^12.2.0",
+    "typescript": "^5.2.2"
+  }
+}

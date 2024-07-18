@@ -1,0 +1,1 @@
+/// <reference path="../../../typings/shims-vue.d.ts"/>
