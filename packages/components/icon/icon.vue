@@ -1,5 +1,5 @@
 <template>
-  <svg class="icon" :color="iconColor" :style="fontSize" aria-hidden="true">
+  <svg class="lam-icon" :color="iconColor" :style="fontSize" aria-hidden="true">
     <use :xlink:href="iconName"></use>
   </svg>
 </template>

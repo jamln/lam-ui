@@ -1,7 +1,7 @@
 <template>
   <button class="lam-button" :class="styleClass">
-    <slot/>
     <Icon v-if="icon" :name="icon"></Icon>
+    <span><slot /></span>
   </button>
 </template>
 

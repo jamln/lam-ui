@@ -114,5 +114,38 @@ import { lam-button } from "@lam-ui/components";
 }
 </style>
 ```
+</details>
 
+
+## 包含icon
+
+<div class="example">
+    <div>
+      <lam-button type="primary">默认按钮</lam-button>
+      <lam-button type="primary" icon="wancheng">icon1</lam-button>
+      <lam-button type="primary" icon="jia">icon2</lam-button>
+      <lam-button type="primary" icon="shoucang">icon3</lam-button>
+    </div>
+</div>
+
+<details>
+<summary>展开查看</summary>
+
+```vue
+<template>
+  <div>
+    <lam-button>默认按钮</lam-button>
+    <lam-button type="primary" icon="wancheng">icon1</lam-button>
+    <lam-button type="primary" icon="jia">icon2</lam-button>
+    <lam-button type="primary" icon="shoucang">icon3</lam-button>
+  </div>
+</template>
+<script lang="ts" setup>
+</script>
+<style>
+.lam-button {
+  margin-right: 10px;
+}
+</style>
+```
 </details>

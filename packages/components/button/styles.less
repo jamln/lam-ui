@@ -16,6 +16,9 @@
   font-size: 12px;
   border-radius: 3px;
   color: @font-color;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid @button-border-color;
 }
 
@@ -49,4 +52,9 @@
   padding: 10px 20px;
   font-size: 14px;
   border-radius: 4px;
+}
+
+// icon
+.@{class} [class*=lam-icon]+span{
+  margin-left: 6px;
 }
