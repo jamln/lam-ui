@@ -7,6 +7,7 @@ export default defineConfig({
   head: [
     ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon.ico"}],
   ],
+  base: '/lam-ui-docs/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "/logo.png",
