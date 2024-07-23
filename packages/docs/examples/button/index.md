@@ -5,7 +5,10 @@
         padding:20px
     }
     .lam-button {
-        margin:10px 5px !important
+        margin:10px 5px !important;
+    }
+    .lam-button:not(.primary, .warning, .danger, .info){
+      color: var(--button-text-color);
     }
     
     details > summary:first-of-type {

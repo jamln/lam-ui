@@ -1,5 +1,6 @@
 import DefaultTheme from "vitepress/theme";
 import LamUi from "@lam-ui/components";
+import './variables.css';
 export default {
   ...DefaultTheme,
   enhanceApp: async ({ app, router, siteData }) => {

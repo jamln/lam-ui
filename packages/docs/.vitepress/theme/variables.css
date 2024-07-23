@@ -1,0 +1,6 @@
+:root{
+  --button-text-color: #2f3540;
+}
+.dark{
+  --button-text-color: rgba(255, 255, 245, 0.86)
+}
