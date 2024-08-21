@@ -1,20 +1,53 @@
 {
   "name": "@lam-ui/components",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.ts",
+  "version": "0.0.4",
+  "description": "A Vue based front-end ui component toolkit 【Demo】!",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run clean && rollup -c",
+    "build:all": "npm run clean && npm run build && npm run build:umd && npm run build:cjs",
+    "build:umd": "rollup -c ./rollup.umd.config.mjs",
+    "build:cjs": "rollup -c ./rollup.cjs.config.mjs",
+    "build:type": "rimraf ./types && tsc --declaration --emitDeclarationOnly --outDir ./types",
+    "clean": "rimraf ./dist"
   },
-  "dependencies": {
-    "vue": "^3.4.21"
+  "peerDependencies": {
+    "vue": "3.4.30"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.4",
-    "typescript": "^5.2.2",
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "esbuild": "^0.23.0",
+    "rimraf": "^6.0.1",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-esbuild": "^6.1.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-vue": "^6.0.0",
+    "typescript": "~5.4.0",
+    "vue": "3.4.30",
     "vue-tsc": "^2.0.6"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "Component",
+    "UI",
+    "Vue3",
+    "typescript"
+  ],
+  "author": "jamln",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "dependencies": {
+    "@lam-ui/components": "file:",
+    "lam-ui": "file:"
+  }
 }

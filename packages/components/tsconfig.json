@@ -12,9 +12,13 @@
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "emitDeclarationOnly": true,
+    // "noEmit": true,
     "jsx": "preserve",
     "jsxImportSource": "vue",
+
+    "declaration": true, /* 生成相关的 '.d.ts' 文件。 */ 
+    // "declarationDir": "./dist", /* '.d.ts' 文件输出目录 */ 
 
     /* Linting */
     "strict": true,
@@ -23,5 +27,5 @@
     "noFallthroughCasesInSwitch": true
   },
   // "include": ["**/*.ts", "**/*.tsx", "src/**/*.vue"],
-  "include": ["**/*.ts", "**/*.vue"]
+  "include": ["**/*.ts", "**/*.vue", "../../typings/shims-vue.d.ts"]
 }

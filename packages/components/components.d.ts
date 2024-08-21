@@ -1,5 +1,6 @@
 import ButtonComponent from './button'
 import Icon from './icon';
+import Rate from './rate';
 
 declare module 'vue' {
   // 全局组件需要定义 interface GlobalComponents
@@ -8,6 +9,7 @@ declare module 'vue' {
   export interface GlobalComponents { 
     LamButton: typeof ButtonComponent;
     LamIcon: typeof Icon;
+    LamRate: typeof Rate;
   }
 }
 

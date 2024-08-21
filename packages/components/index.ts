@@ -1,14 +1,14 @@
 import type { Component, App } from 'vue';
-import Button from "./button";
-import Icon from './icon';
-import Rate from './rate';
+import LamButton from "./button";
+import LamIcon from './icon';
+import LamRate from './rate';
 
 const components: {
   [propName: string]: Component;
 } = {
-  LamButton: Button,
-  LamIcon: Icon,
-  LamRate: Rate,
+  LamButton,
+  LamIcon,
+  LamRate,
 };
 
 export default {
@@ -19,6 +19,8 @@ export default {
   }
 };
 
-// export {
-//   LamButton
-// }
+export {
+  LamButton,
+  LamIcon,
+  LamRate,
+}

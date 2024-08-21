@@ -16,7 +16,7 @@ export default defineComponent({
   props: buttonProps,
   setup(props) {
     // toRef 使prop.type能响应更新
-    const type = toRef(props, 'type')
+    // const type = toRef(props, 'type')
     const icon = toRef(props, 'icon')
     const styleClass = computed(() => {
       return {
